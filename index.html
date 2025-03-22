@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple html5 website</title>
+    <style>
+         table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Things I like doing</h2>
+        <ol type="i">
+            <li>Eating</li>
+            <li>Sleeping</li>
+            <li>Studying</li>
+            <li>Cooking</li>
+        </ol>
+    </section>
+    <section>
+        <h2>A picture of a deer</h2>
+        <figure>
+            <img src="https://images.pexels.com/photos/30528098/pexels-photo-30528098/free-photo-of-close-up-portrait-of-fallow-deer-in-forest.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="a deer standing" widht="300" height="400">
+            <figcaption>A deer loopking at me</figcaption>
+        </figure>
+    </section>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>name:</th>
+                    <th>address:</th>
+                    <th>mobile:</th>
+                    <th>email:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Emmanual</td>
+                    <td>122100</td>
+                    <td>+2547434743</td>
+                    <td>emaaim@gamil.com</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>05343</td>
+                    <td>+2547474893</td>
+                    <td>u5ionu@gamil.com</td>
+                </tr>
+                <tr>
+                    <td>Fidelis</td>
+                    <td>002220</td>
+                    <td>+254747909098</td>
+                    <td>fedeol@gamil.com</td>
+                </tr>
+                <tr>
+                    <td>Eric</td>
+                    <td>00100</td>
+                    <td>+2547474743</td>
+                    <td>kululu@gamil.com</td>
+                </tr>
+                <tr>
+                    <td>nyambura</td>
+                    <td>00144</td>
+                    <td>+2547498898943</td>
+                    <td>nyambura@gamil.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <label for="name">Your name:</label>
+            <input type="text" id="name" placeholder="Minne Nyambura" required>
+            <label for="email">Your email:</label>
+            <input type="email" id="email" placeholdere="e.g email.@gamil.com" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" minlength="6" required>
+
+        
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+       
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+              <option value="">-- Select Country --</option>
+              <option value="usa">United States</option>
+             <option value="canada">Canada</option>
+             <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+        </select>
+
+      
+         <fieldset>
+            <legend>Gender:</legend>
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interests:</legend>
+            <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+            <label><input type="checkbox" name="interests" value="design"> Design</label>
+            <label><input type="checkbox" name="interests" value="marketing"> Marketing</label>
+        </fieldset>
+
+        <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
